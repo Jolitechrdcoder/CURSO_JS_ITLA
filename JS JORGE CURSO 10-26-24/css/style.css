@@ -1,0 +1,111 @@
+/* fuente para la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+*
+ {
+    margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+}
+
+body
+ {
+    font-family: 'Poppins', sans-serif;
+     line-height: 1.6;
+      color: #333;
+       max-width: 1200px;
+        margin: 0 auto;
+         padding: 0 20px;
+   
+}
+
+/* estilos del header */
+/* header 
+{
+    background-color: #000000;
+     color: #fff;
+      text-align: center;
+       padding: 1rem;
+}
+
+header h1 {
+    font-weight: 600;
+} */
+
+/* estilos navegacion */
+
+
+nav ul 
+{ 
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li
+ {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a 
+{   
+    
+    text-decoration: none;
+     color: #333;
+      font-weight: 400;
+      font-size: 20px;
+       transition: color 0.3s ease;
+    
+       
+}
+
+@keyframes colorChange{
+    from{ color: #333;}
+    to {color: #007bff;}
+}
+
+nav ul li a:hover 
+{
+    animation: colorChange 0.5s forwards;
+}
+
+
+/* estilos para el footer por clase */
+.derecho{
+    background-color: #2c2b2b;
+    color: #ffffff;
+     text-align: center;
+     font-weight: 500;
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     left: 0;
+}
+
+#autor{
+    font-size: 20px;
+
+}
+#autor span{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+/* diseno para los dispositivos mobiles */
+/* @media (max-width: 768px)
+{
+    nav ul 
+    {
+        flex-direction: column;
+         align-items: center;
+    }
+
+    nav ul li
+     {
+        margin: 0.5rem 0;
+    }
+} */
