@@ -1,0 +1,501 @@
+/* fuente para la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+*
+ {
+    margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+}
+
+
+.principal{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(12,3,51,0.3), rgba(12,3,5,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width:100% ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 80px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 1px 22px;
+
+}
+
+
+/* estilos de el h1 y el boton de servicios */
+.contenido
+{
+    text-align: center;
+}
+.contenido h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight:600 ;
+    transition: 0.5s all  ease;
+
+}
+.contenido h1:hover{
+    -webkit-text-stroke: 2px #00b0f5;
+    color: transparent;
+}
+.contenido a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.5s all  ease;
+}
+.contenido a:hover{
+  border-radius: 20px;
+  color:#00b0f5; 
+}
+/* estilos video de fondo */
+.fondo-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+@keyframes colorChange{
+    from{ color: #333;}
+    to { color: #00b0f5;}
+}
+
+nav ul li a:hover 
+{   
+    border-radius: 10px;
+    animation: colorChange 0.5s forwards;
+}
+
+
+/* estilos para el footer por clase */
+.derecho{
+    background-color: #2c2b2b;
+    color: #ffffff;
+     text-align: center;
+     font-weight: 500;
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     left: 0;
+}
+
+#autor{
+    font-size: 20px;
+
+}
+#autor span{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* estilos para la pagina contacto */
+
+
+.contenedor{
+    position: relative;
+    max-width: 820px;
+    height: 2000px;
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    background-color: #fff;
+    max-width: 820px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 92, 211, 0.1);
+     z-index: 1000; 
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+ 
+.formulario-contacto{
+background-color: #1a7bbc;
+position: relative;
+}
+
+.circle{
+   
+   border-radius: 50%;
+   background: linear-gradient(135deg,transparent 20%,#145992);
+   position: absolute;
+   
+}
+.circle.uno{
+width: 130px;
+height: 130px;
+top: 130px;
+right: -40px;
+}
+
+.circle.dos{
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 30px;
+    }
+
+    .formulario-contacto::before{
+        content: "";
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background-color: #1a7bbc;
+        transform: rotate(45deg);
+        top: 50px;
+        left: -13px;
+    }   
+    
+form{
+    padding: 2.3rem 2.2rem;
+    z-index: 2000;
+    overflow: hidden;
+    position: relative;
+}
+
+.title{
+    color:#fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+    
+}
+
+.input-container{
+    position: relative;
+    margin: 1rem 0;
+}
+
+.input{
+   width: 100%;
+   outline: none;
+   border: 2px solid #fafafa;
+   background: none;
+   padding: 0.6rem 1.2rem;
+   color: #fff;
+   font-size: 0.95rem;
+   letter-spacing: 0.5px;
+   border-radius: 25px;
+   transition: 0.3s;
+}
+textarea.input{
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.input-container label{
+    position: absolute;
+    top:70%;
+    left: 20px;
+    transform: translateY(-100%);
+    padding: 0 0.4rem;
+    color: #fafafa52;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.input-container.textarea label{
+    top: 1rem;
+    transform: translateY(0);
+}
+
+.btn{
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color:#1a7bbc ;
+    line-height:1 ;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* estilos area de informacion */
+
+
+
+.informacion_contacto{
+ padding: 2.3rem 2.2rem;
+ position: relative;
+}
+
+.informacion_contacto .title{
+    color:#1a7bbc;
+
+}
+
+.text{
+    color:#333 ;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.informacion{
+  display: flex;
+  color: #555;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.icon{
+    width: 28px;
+    margin-right:0.7rem ;
+}
+
+.redes-sociales{
+    padding: 2rem 0 0 0;
+}
+
+.redes-sociales p{
+    color: #333;
+}
+.social-icon{
+    display: flex;
+    margin-top: 0.5rem;
+}
+.social-icon a{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg,#145992,#1a7bbc);
+    color:#fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: .3s;
+}
+.social-icon a:hover{
+    transform: scale(1.05);
+}
+
+.informacion_contacto::before{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    border: 22px solid #1a7bbc;
+    border-radius: 50%;
+    bottom:-77px ;
+    right: 20px;
+    opacity: 0.3;
+}
+/* estilos para pagina servicios */
+.contenido2 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 60vh;
+    padding: 2rem;
+    position: relative;
+   
+    color: #fff;
+}
+
+.contenido2 h1 {
+    font-size: 2.5em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+}
+
+.caja-contenidos {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+/* estilos calculadora */
+
+.Calculadora button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+}
+
+#igual {
+    background: rgba(52, 152, 219, 0.7);
+    color: white;
+}
+
+#reset {
+    background: rgba(231, 76, 60, 0.7);
+    color: white;
+}
+
+#suma, #resta, #multiplicacion, #division {
+    background: rgba(46, 204, 113, 0.7);
+    color: white;
+}
+.Calculadora {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.Calculadora button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+#resultado {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contenido h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px; /* Aumentado el espacio entre los botones */
+    margin-top: 20px;
+}
+
+.card2 {
+    padding: 20px;
+}
+
+.card2 button {
+    padding: 15px 40px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #2196F3, #00BCD4);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 150px; /* Ancho mínimo para los botones */
+}
+
+.card2 button:hover {
+    background: linear-gradient(45deg, #00BCD4, #2196F3);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.5);
+}
+.jq{
+    width: 400px;
+}
