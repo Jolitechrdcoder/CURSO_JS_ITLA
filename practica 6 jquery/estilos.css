@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+
+
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    padding: 20px;
+    
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #dogImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  #newDogButton {
+    background-color: #035005;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+  }
+  
+  #newDogButton:hover {
+    background-color: #01aa04;
+  }
